@@ -1,0 +1,101 @@
+:root {
+    --deepBlue: #02042a;
+    --lightBlue: #2b84ea;
+    --lightBlue300: #4b94ed;
+    --lightBlue500: #0b72e7;
+    --greenLight: #61cea6;
+    --grayText: #818597;
+    --lightGray: #e2e2e2;
+    --grayBlue: #344a6c;
+    --deepBlueHead: #162f56;
+    --gray2: #525a76;
+  }
+
+body{
+    font-family:"Mulish","sans-serif"
+}
+.navbar {
+    background-color:var(--deepBlue) ;
+}
+.nav-container{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle{
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.middle-li{
+    list-style: none;
+    cursor: pointer;
+    transition: all ;
+    transition-duration: 200ms;
+    position: relative;
+    padding: 1.75rem 0;
+    /* font-mullish  py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group */
+}
+.middle-li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.middle-li:hover{
+    color: var(--lightBlue);
+}
+.middle-li a:hover{
+    color: var(--lightBlue);
+}
+
+.middle-li .hover-div {
+    width: 100%;
+    position: absolute;
+    height: 0.25rem;
+    background-color: var(--lightBlue);
+    bottom: 0px;
+    display: none;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+/* <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div> */
+.middle-li:hover .hover-div{
+    display: block;
+}
+
+.right{
+    display: flex;
+    gap: 1.5rem;
+  align-items: center;
+}
+.logBtn {
+    border: 1px solid var(--lightBlue300);
+    /* py-3 px-4 */
+    padding: 0.75rem 1rem;
+    background-color: var(--deepBlue);
+    color:white;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+.sing-up{
+    border: 1px solid black;
+    background-color: white;
+    color: var(--lightBlue300);
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
